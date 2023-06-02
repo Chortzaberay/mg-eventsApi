@@ -7,3 +7,4 @@ class ReservationSchema(SQLAlchemyAutoSchema):
         exclude = ["id"]
         load_instance = True
         model = Reservation
+        include_fk = True
