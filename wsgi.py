@@ -1,8 +1,9 @@
 from src import create_app
 from config import configs
+import os 
 
 
-app = create_app(configs['dev'])
+app = create_app(configs[os.environ.get("CONFIG", "dev")])
 
 
 
